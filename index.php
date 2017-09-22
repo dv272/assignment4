@@ -4,14 +4,15 @@
 	<title>My Web Page</title>
 </head>
 <body>
+
 <?php
 
 	class stringfun {
-		public function __construct{
+		public function __construct() {
 			echo 'string object is created </br>';
 		}
 
-		public function __destruct{
+		public function __destruct() {
 			echo 'string object is destroyed </br>';
 		}
 
@@ -89,13 +90,13 @@
 
 		class ArrayFunction{
 			
-			public function_construct() {
-				echo 'array object is created.'
+			public function __construct() {
+				echo 'array object is created.';
 
 			}
 
-			public function_destruct() {
-				echo 'array object is destroyed.'
+			public function __destruct() {
+				echo 'array object is destroyed.';
 			}
 
 			public function array_intersectFun() {
@@ -110,17 +111,10 @@
 			}
 
 			public function array_mapFun() {
-				echo '<h1>Array map function</h1>';
-				
-			function myfunction($v)
-			{
-			  return($v*$v);
-			}
-
-			$a=array(1,2,3,4,5);
-			print_r(array_map("myfunction",$a));
-				echo'<hr>';
-				
+				echo '<h1>Array fill function</h1>';
+				$a=array_fill(5,5,"NJIT");
+				print_r($a);
+				echo '<hr>';
 			}
 
 			public function array_sumFun() {
@@ -211,5 +205,6 @@
 
 
 ?>
+
 </body>
-</html>>
+</html>
