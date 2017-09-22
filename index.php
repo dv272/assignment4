@@ -7,11 +7,11 @@
 <?php
 
 	class stringfun {
-		public function_construct{
+		public function __construct{
 			echo 'string object is created </br>';
 		}
 
-		public function_destruct{
+		public function __destruct{
 			echo 'string object is destroyed </br>';
 		}
 
